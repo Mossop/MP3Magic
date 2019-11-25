@@ -1,0 +1,71 @@
+login@username@newuser(t/f)@
+  return user
+
+getfavorites@
+  return playlists
+
+createplaylist@playlistname@
+  return playlist
+
+createtrack@artist@title@filename@album@genre@size@length@bitrate@
+  return track
+
+logout@deluser(t/f)@
+  disconnect!
+
+getplaylists@
+  returns all playlists
+
+gettracks@
+  returns all tracks
+
+deleteplaylist@playlistname@
+  returns nothing
+
+deletetrack@artist@title@
+  returns nothing
+
+findtrack@searchbyartist@artist@searchbytitle@title@searchbyfilename@filename@searchbyalbum@album@searchbygenre@genre@searchbysize@size@searchbylength@length@searchbybitrate@bitrate@
+  return tracks
+
+findplaylist@playlistname@
+  return playlist
+
+setname@oldname@newname@
+  return playlist
+
+gettracks@playlistname@
+  return tracks
+
+addtrack@playlistname@artist@title@position@
+  return playlist
+
+removetrack@playlistname@position@
+  return playlist
+
+movetrack@playlistname@pos1@pos2@
+  return playlist
+
+swaptrack@playlistname@oldposition@newposition@
+  return playlist
+
+copyplaylist@playlistname@playlistnewname@
+  return new playlist
+
+appendplaylist@playlistname@playlisttoappend@
+  return appended playlist
+
+edittrack@artist@title@newartist@newtitle@newfilename@newalbum@newGenre@newFileSize@newLength@newBitRate@
+  return track
+
+addplaylist@playlistname@position@
+  return favorites
+
+removeplaylist@position@
+  return favorites
+
+moveplaylist@oldpos@newpos@
+  return favorites
+
+swapplaylist@pos1@pos2@
+  return favorites

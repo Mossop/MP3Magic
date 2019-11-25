@@ -1,0 +1,4 @@
+#! /bin/tcsh
+
+cat tables.sql | mysql
+cat data.sql | mysql
